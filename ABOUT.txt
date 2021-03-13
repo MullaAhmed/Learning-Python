@@ -2,4 +2,4 @@ ___________________________ABOUT________________________________
 
 This project has been created to fulfill the requirment of the CBSE Senior Secondary Examination Class XII for Computer science.
 This project is been created by Ahmed Mulla of class XII under the guidance of Umesh sir and support from Google .
- This project is created to tecah a new beginer how to code with python.
+This project is created to teach a new beginner how to code with python.
