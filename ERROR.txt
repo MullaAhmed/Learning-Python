@@ -1,0 +1,72 @@
+____________________________________ExceptionHandling________________
+
+Error handling in Python is done through the use of exceptions that are caught in try blocks and handled in except blocks. 
+
+Syntax:::
+         try:
+             # statement that may raise error
+         except:
+             # handle exception here
+         finally:
+             # statement that will always run
+
+####Try and Except ::-
+
+If an error is encountered, a try block code execution is stopped and transferred
+down to the except block. In addition to using an except block after the try block, you can also use the finally block. The code in the finally block will be executed regardless of whether an exception
+occurs.
+
+##Raising an Exception
+You can raise an exception in your own program by using the raise exception 
+[, value] statement. Raising an exception breaks current code execution and returns the exception
+back until it is handled.
+
+Example:   A try block look like below
+try:
+    print "Hello World"
+except:
+    print "This is an error message!"
+
+
+_____________________Some Exceptions_____________________________
+
+EXCEPTION NAME	                        DESCRIPTION
+
+OverflowError()	        Raised when a calculation exceeds maximum limit for a numeric type.
+
+0ZeroDivisonError()	Raised when division or modulo by zero takes place for all numeric types.
+
+EOFError()	        Raised when there is no input from either the raw_input() or input() function   and the end of file is reached.
+
+ImportError()	        Raised when an import statement fails.
+
+IndexError()	        Raised when an index is not found in a sequence.
+
+NameError()	        Raised when an identifier is not found in the local or global namespace.
+
+IOError()		Raised when an input/ output operation fails, such as the print statement or the open() function when trying to open 
+                        a file that does not exist.
+
+TypeError()             Raised when an operation or function is attempted that is invalid for the specified data type.
+
+ValueError()	        Raised when the built-in function for a data type has the valid type of arguments, but the arguments have invalid values specified.
+
+
+
+
+_____________________________Generators_________________________
+
+A generator is simply a function which returns an object on which you can call next, such that for every call it returns some value, until it raises a StopIteration exception, signaling that all values have been generated. Such an object is called an iterator.
+Normal functions return a single value using return, just like in Java. In Python, however, there is an alternative, called yield. Using yield anywhere in a function makes it a generator
+
+EXAMPLE:
+>>> def myGen(n):
+...     yield n
+...     yield n + 1
+... 
+>>> g = myGen(6)
+>>> next(g)
+6
+>>> next(g)
+7
+

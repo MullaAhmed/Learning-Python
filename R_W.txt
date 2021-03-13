@@ -1,0 +1,67 @@
+__________________Opening and Closing____________________
+The first thing to do when you are working with files in Python isto open thefile. When you open the files, you can specify with parameters how you want to open them. 
+The "r" is for reading, the "w" for writing and the "a" for appending.
+
+This opens the filename for reading. 
+
+By default, the file is opened with the "r" parameter. 
+fh = open("filename_here", "r")
+
+This opens the fhe file for writing. 
+
+It will create the file if it doesn't exist, and if it does, it will overwrite
+it.
+fh =open("filename_here", "w")
+
+This opens the fhe file in appending mode. 
+
+That means, it will be open for writing and everything will be written to the
+end of the file.
+fh =open("filename_here", "a")
+
+#This closes the file and is used when the program doesn't need it more. 
+fh.close()
+
+
+_____________________Reading and Writting ______________________
+
+###Reading from file
+Functions available for reading the files: read, readline and readlines. 
+ 
+-----Read---
+The read function reads all characters (unless you specify other)
+eg.
+    fh = open("filename", "r")
+    content = fh.read()
+
+---Readline---
+The readline function reads a single line from the file
+eg.
+   fh = open("filename", "r")
+   content = fh.readline()
+
+----Readlines----
+The readlines function returns a list containing all the lines of data in the
+file.The readlines function reads all rows and retains the newlines character that is
+at the end of every row.
+eg.
+fh = open("filename", "r")
+content = fh.readlines()
+print content.rstrip() 
+print content[:-1]
+
+### Writting from files
+The functions for writing are write and writelines
+
+---Write---
+To write a fixed sequence of characters to a file
+eg.
+   fh = open("hello.txt","w")
+   write("Hello World")
+
+----Writeline----
+With the writeline function you can write a list of strings to a file
+eg.
+   fh = open("hello.txt", "w")
+   lines_of_text = ["a line of text", "another line of text", "a third line"]
+   fh.writelines(lines_of_text)

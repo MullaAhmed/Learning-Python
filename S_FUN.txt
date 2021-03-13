@@ -1,0 +1,23 @@
+_____________________String Manipulation Methods_____________________
+
+1. string.capitalize(): 
+ Returns a copy ofstring with first characcter     capitalised.
+
+2.string.upper():
+Return a copy of s, but with lower case letters converted to upper case
+
+3.string.lstrip(s[, chars]):
+Return a copy of the string with leading characters removed. If chars is omitted or None, whitespace characters are removed. If given and not None, chars must be a string; the characters in the string will be stripped from the beginning of the string this method is called on.
+
+4.string.rstrip(s[, chars]):
+Return a copy of the string with trailing characters removed. If chars is omitted or None, whitespace characters are removed. If given and not None, chars must be a string; the characters in the string will be stripped from the end of the string this method is call.
+
+5.string.lower(s):
+Return a copy of s, but with upper case letters converted to lower case.
+
+6.string.find(s, sub[, start[, end]]):
+Return the lowest index in s where the substring sub is found such that sub is wholly contained in s[start:end]. Return -1 on failure. Defaults for start and end and interpretation of negative values is the same as for slices.
+
+7.string.islower(): This method checks if the string is  in lowercase and returns true if all the characters are in lowercase.
+
+8.string.isupper(): This method checks if all the characters in the string are in uppercase. If any character is in lower case, it would return false otherwise true.

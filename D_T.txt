@@ -1,0 +1,35 @@
+_______________________DATA STRUCTURES________________________
+
+Python offers  5  different types of data structure.
+
+1. ARRAY:
+Array refers to a named list of finite number n of similar data elelments. Each of the data elements can be referenced respectively
+by a set of consecutive numbers, usually 0,1,2,3,4 . . .  n .
+eg.
+    A array ar containing 10 elements will be referenced as
+   ar[0],ar[1] ,ar[2] . . . ar[9]
+
+2. STACKS:
+Stacks data structure refer to list stored and accessed in a special way,
+where LIFO(Last In First Out) technique is followed.In stack insertion and deletion take place at only one end called the top.
+
+3. QUEUES:
+Queues data structure are FIFO(First In First Out ) lists , where 
+take place at "rear" end of queue deletions take place at the "front" end
+of the queue.
+
+4. LINKED LIST:
+Linked lists are special list of some data elements linked to one another.
+The logical ordering is represented by having each element pointing to 
+next element.Each element is called a 'node' which has tho parts.
+The INFO part which stores the information and the reference pointer part
+i.e stores reference of next element.
+
+5.Trees:
+Trees are multilevel data structures having a hierarchical relationship amongs 
+its element called 'node'. Topmost node is called node of the tree and bottom
+most node of tree is called leaves of tree. Each node have some 3:59 PM 12/12/2016reference pointerspointing to node below it.
+
+
+
+             
